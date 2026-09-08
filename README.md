@@ -30,6 +30,17 @@ Install it in any Vue 3 app, import the bundled styles, and embed `OdontogramShe
 
 It renders layered SVG tooth templates to represent restorations, caries, endodontic status, mobility, and other clinical details, while providing multi-select, selection filters, and predefined status presets.
 
+### Docker demo
+
+Build and run the standalone demo application in a production container:
+
+```bash
+docker build -t vue-advanced-odontogram .
+docker run --rm -p 8080:80 vue-advanced-odontogram
+```
+
+Open http://localhost:8080 in a browser. The regular `npm run build` command remains the npm library build; the container uses `npm run build:app` for the included demo page.
+
 ---
 <img width="1728" height="922" alt="odontogram-editor-preview" src="https://github.com/user-attachments/assets/0d6e076e-a840-408c-93cc-974e0767aaaf" />
 

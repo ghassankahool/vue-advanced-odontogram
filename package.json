@@ -44,6 +44,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
+    "build:app": "vite build --config vite.app.config.ts",
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest run",
